@@ -93,13 +93,13 @@ function init() {
         });
     });
 
-    var url1 =  "http://www.mapmakergis.com/maps/rest/services/ODNR/ODNR_Streetmap/MapServer";
+    var url1 =  "http://mapmakergis.com/maps/rest/services/ODNR_Basemaps/Streetmap/MapServer";
     var mapLayer1 = new esri.layers.ArcGISTiledMapServiceLayer(url1, {tileServers:[
-	"http://a.mapmakergis.com/maps/rest/services/ODNR/ODNR_Streetmap/MapServer",
-	"http://b.mapmakergis.com/maps/rest/services/ODNR/ODNR_Streetmap/MapServer",
-	"http://c.mapmakergis.com/maps/rest/services/ODNR/ODNR_Streetmap/MapServer"]});
+	"http://a.mapmakergis.com/maps/rest/services/ODNR_Basemaps/Streetmap/MapServer",
+	"http://b.mapmakergis.com/maps/rest/services/ODNR_Basemaps/Streetmap/MapServer",
+	"http://c.mapmakergis.com/maps/rest/services/ODNR_Basemaps/Streetmap/MapServer"]});
 
-    var url2 = "http://www.mapmakergis.com/maps/rest/services/ODNR/ODNR_Streetmap/MapServer";
+    var url2 = "http://mapmakergis.com/maps/rest/services/ODNR_Basemaps/Streetmap/MapServer";
     var mapLayer2 = new esri.layers.ArcGISTiledMapServiceLayer(url2);
 
     dojo.connect(mapLayer1, "onUpdateStart", map1UpdateStarted);
